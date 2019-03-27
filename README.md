@@ -9,3 +9,5 @@ The intrincic difficulty of the statistical analysis of cluster-specific DE gene
 We develop a new statistical method called single-cell post-clustering inference (scPCI) that can properly correct the clustering bias by using recent statistical analysis framework called selective inference.
 We demonstrate the validity and the usefulness of the scPCI method in controlled simulations studies and re-analyses of published scRNA-seq datasets.
 The scPCI method enables the researchers to obtain valid p-values of cluster-specific DE genes, which makes scRNA-seq more quantitative, reliable and reproducible. 
+
+## Usage
