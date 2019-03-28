@@ -39,7 +39,7 @@ Then you perform the preprocessing for two dataset.
 Preprocessing basically follows the original paper ([PBMC dataset](https://github.com/10XGenomics/single-cell-3prime-paper), [FACS fat](https://github.com/czbiohub/tabula-muris) 
 ).
 In "Preprocessing" directory, you can find the R code for preprocessing.
-So you download two dataset in the same directory, according to the original paper.
+You should download two dataset in the same directory, according to the original paper.
 
 ### 1. Clustering
 Perform clustering on preprocessed data.
@@ -51,25 +51,25 @@ There are "PBMC" or "FACSfat" in dataset name.
 ### 2. Post-Clustering Inference
 Perform scPCI method. 
 You choose scPCI-gene or scPCI-cluster.
-If you want to perform scPCI-gene, you should input following command.
+If you want to perform scPCI-gene, you should run following command.
 
 `Run_[dataset name].py`
 
-Or if you want to perform scPCI-cluster, you should input following command.
+Or if you want to perform scPCI-cluster, you should run following command.
 
 `Run_[dataset name]_gn.py`
 
 ### Recalculation of p-value 
 In many cases of real data analysis, it is often impossible to calculate p-values numerically.
 So we provide the code to approximate these by importance sampling.
-We recommend that you do the following after step2.
+If you have `nan` in the result of step2, you should do the follwing after step2.
 
 `Recomp_pval.py` 
 
 `Recomp_pval_gn.py`
 
 ## Data format
-上の実行結果が, Resultというdirectoryに発生するが, 論文中の図を再現するためには, PCI_[dataset]/each/にPCI-geneの結果を, PCI_[dataset]/global/にPCI-geneの結果を入れる必要がある.
+The outputs of the above result are saved in a directory named as "Result". In order to reproduce figures in the paper, you should move the results of PCI-gene from "Result" to PCI_[dataset name]/each/, or similarly those of PCIgn-gene from "Result" to PCI_[dataset name]/global/.
 
 ## Lisence
 GNU General Public License
