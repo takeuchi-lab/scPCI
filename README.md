@@ -68,8 +68,9 @@ If you have `nan` in the result of step2, you should do the follwing after step2
 
 `Recomp_pval_gn.py`
 
-## Data format
+### Create Figures
 The outputs of the above result are saved in a directory named as "Result". In order to reproduce figures in the paper, you should move the results of PCI-gene from "Result" to PCI_[dataset name]/each/, or similarly those of PCIgn-gene from "Result" to PCI_[dataset name]/global/.
+
 
 ## Lisence
 GNU General Public License
