@@ -1,4 +1,4 @@
-#*.npz
-*.npy
+# *.npz
+# *.npy
 *.csv
 *.pdf
